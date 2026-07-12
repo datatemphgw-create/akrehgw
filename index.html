@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Portal Zoom</title>
+<title>Portal Zoom Akreditasi</title>
+<link rel="icon" href="vb/icon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -10,7 +11,7 @@
     body {
         font-family: 'Poppins', sans-serif;
         /* Layering: gradient on top of the image */
-        background: linear-gradient(-45deg, rgba(255, 166, 0, 0.7), rgba(4, 120, 87, 0.7), rgba(30, 58, 138, 0.7), rgba(238, 255, 0, 0.7)), url('unnamed.webp');
+        background: linear-gradient(-45deg, rgba(255, 166, 0, 0.7), rgba(4, 120, 87, 0.7), rgba(30, 58, 138, 0.7), rgba(238, 255, 0, 0.7)), url('back.jpg');
         background-size: 400% 400%, cover; /* First value for gradient, second for image */
         background-position: center;
         background-repeat: no-repeat;
@@ -53,6 +54,9 @@
 <main>
     <div class="mb-8">
         <input id="searchInput" class="w-full p-4 rounded-lg text-gray-800 bg-white/80 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-400 transition" placeholder="Cari ruangan...">
+        <a href="https://sivena.abarobotics.com/login" target="_blank" rel="noopener noreferrer" class="mt-3 flex items-center justify-center w-full px-4 py-3 rounded-lg bg-green-600 text-white font-semibold shadow-lg hover:bg-green-700 transition">
+            <i class="fas fa-external-link-alt mr-2"></i> Buka SIVENA
+        </a>
     </div>
     <div id="roomList" class="grid md:grid-cols-3 gap-6">
         <!-- Room cards will be injected here by JavaScript -->
@@ -66,47 +70,75 @@
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             
                     <div class="group relative bg-white/10 p-2 rounded-xl border border-white/10 hover:bg-white/20 transition">
-                        <img src="vb/Host.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
-                        <a href="vb/Host.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
+                        <img src="vb/host.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
+                        <a href="vb/host.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
                             <i class="fas fa-download mr-1"></i> Download
                         </a>
                         <p class="text-[10px] text-white mt-2 truncate opacity-60">Host.png</p>
                     </div>
                     <div class="group relative bg-white/10 p-2 rounded-xl border border-white/10 hover:bg-white/20 transition">
-                        <img src="vb/Tracker 1.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
-                        <a href="vb/Tracker 1.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
+                        <img src="vb/tracker_1.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
+                        <a href="vb/tracker_1.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
                             <i class="fas fa-download mr-1"></i> Download
                         </a>
-                        <p class="text-[10px] text-white mt-2 truncate opacity-60">Tracker 1.png</p>
+                        <p class="text-[10px] text-white mt-2 truncate opacity-60">tracker_1.png</p>
                     </div>
                     <div class="group relative bg-white/10 p-2 rounded-xl border border-white/10 hover:bg-white/20 transition">
-                        <img src="vb/Tracker 2.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
-                        <a href="vb/Tracker 2.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
+                        <img src="vb/tracker_2.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
+                        <a href="vb/tracker_2.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
                             <i class="fas fa-download mr-1"></i> Download
                         </a>
-                        <p class="text-[10px] text-white mt-2 truncate opacity-60">Tracker 2.png</p>
+                        <p class="text-[10px] text-white mt-2 truncate opacity-60">tracker_2.png</p>
                     </div>
                     <div class="group relative bg-white/10 p-2 rounded-xl border border-white/10 hover:bg-white/20 transition">
-                        <img src="vb/Tracker 3.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
-                        <a href="vb/Tracker 3.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
+                        <img src="vb/tracker_3.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
+                        <a href="vb/tracker_3.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
                             <i class="fas fa-download mr-1"></i> Download
                         </a>
-                        <p class="text-[10px] text-white mt-2 truncate opacity-60">Tracker 3.png</p>
+                        <p class="text-[10px] text-white mt-2 truncate opacity-60">tracker_3.png</p>
                     </div>
                     <div class="group relative bg-white/10 p-2 rounded-xl border border-white/10 hover:bg-white/20 transition">
-                        <img src="vb/Tracker 4.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
-                        <a href="vb/Tracker 4.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
+                        <img src="vb/tracker_4.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
+                        <a href="vb/tracker_4.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
                             <i class="fas fa-download mr-1"></i> Download
                         </a>
-                        <p class="text-[10px] text-white mt-2 truncate opacity-60">Tracker 4.png</p>
+                        <p class="text-[10px] text-white mt-2 truncate opacity-60">tracker_4.png</p>
                     </div>
                     <div class="group relative bg-white/10 p-2 rounded-xl border border-white/10 hover:bg-white/20 transition">
-                        <img src="vb/VB RSHPTNG.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
-                        <a href="vb/VB RSHPTNG.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
+                        <img src="vb/tracker_5.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
+                        <a href="vb/tracker_5.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
                             <i class="fas fa-download mr-1"></i> Download
                         </a>
-                        <p class="text-[10px] text-white mt-2 truncate opacity-60">VB RSHPTNG.png</p>
-                    </div>            
+                        <p class="text-[10px] text-white mt-2 truncate opacity-60">tracker_5.png</p>
+                    </div>
+                    <div class="group relative bg-white/10 p-2 rounded-xl border border-white/10 hover:bg-white/20 transition">
+                        <img src="vb/tracker_6.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
+                        <a href="vb/tracker_6.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
+                            <i class="fas fa-download mr-1"></i> Download
+                        </a>
+                        <p class="text-[10px] text-white mt-2 truncate opacity-60">tracker_6.png</p>
+                    </div>
+                    <div class="group relative bg-white/10 p-2 rounded-xl border border-white/10 hover:bg-white/20 transition">
+                        <img src="vb/tracker_7.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
+                        <a href="vb/tracker_7.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
+                            <i class="fas fa-download mr-1"></i> Download
+                        </a>
+                        <p class="text-[10px] text-white mt-2 truncate opacity-60">tracker_7.png</p>
+                    </div>
+                    <div class="group relative bg-white/10 p-2 rounded-xl border border-white/10 hover:bg-white/20 transition">
+                        <img src="vb/vb.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
+                        <a href="vb/vb.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
+                            <i class="fas fa-download mr-1"></i> Download
+                        </a>
+                        <p class="text-[10px] text-white mt-2 truncate opacity-60">vb.png</p>
+                    </div>
+                    <div class="group relative bg-white/10 p-2 rounded-xl border border-white/10 hover:bg-white/20 transition">
+                        <img src="vb/vb_simulasi.png" alt="VB" class="rounded-lg mb-3 w-full h-24 object-cover shadow-md">
+                        <a href="vb/vb_simulasi.png" download class="flex items-center justify-center bg-white text-gray-900 text-xs font-bold py-2 px-1 rounded-lg hover:bg-yellow-400 transition">
+                            <i class="fas fa-download mr-1"></i> Download
+                        </a>
+                        <p class="text-[10px] text-white mt-2 truncate opacity-60">vb_simulasi.png</p>
+                    </div>
         </div>
     </div>
 </main>
@@ -115,9 +147,9 @@
 
 <script>
     const rooms = [
-        { name: "PLENO / MANAJEMEN", id: "5909342033", pass: "PARIPURNA", url: "https://us06web.zoom.us/j/5909342033", hostKey: "436693", icon: "fa-users" },
-        { name: "ASUHAN", id: "81261123394", pass: "PARIPURNA", url: "https://us06web.zoom.us/j/81261123394", hostKey: "123456", icon: "fa-heart-pulse" },
-        { name: "MEDIS", id: "9876543210", pass: "PARIPURNA", url: "https://us06web.zoom.us/j/9876543210", hostKey: "654321", icon: "fa-stethoscope" }
+        { name: "PLENO / MANAJEMEN", id: "87260401596", pass: "rshgw123", url: "https://us06web.zoom.us/launch/jc/87260401596", hostKey: "rshgw123", icon: "fa-users" },
+        { name: "ASUHAN", id: "87260401596", pass: "rshgw123", url: "https://us06web.zoom.us/launch/jc/87260401596", hostKey: "rshgw123", icon: "fa-heart-pulse" },
+        { name: "MEDIS", id: "87260401596", pass: "rshgw123", url: "https://us06web.zoom.us/launch/jc/87260401596", hostKey: "rshgw123", icon: "fa-stethoscope" }
     ];
 
     const roomList = document.getElementById('roomList');
@@ -128,37 +160,63 @@
         return id.replace(/(\d{3})(\d{3})(\d{4})/, '$1 $2 $3');
     };
 
+    const getRoomAccent = (name) => {
+        const normalized = name.toUpperCase();
+        if (normalized.includes('PLENO')) {
+            return {
+                header: 'bg-blue-600',
+                title: 'text-blue-800',
+                button: 'bg-blue-600 hover:bg-blue-700'
+            };
+        }
+        if (normalized.includes('ASUHAN')) {
+            return {
+                header: 'bg-emerald-600',
+                title: 'text-emerald-800',
+                button: 'bg-emerald-600 hover:bg-emerald-700'
+            };
+        }
+        return {
+            header: 'bg-slate-600',
+            title: 'text-slate-800',
+            button: 'bg-slate-600 hover:bg-slate-700'
+        };
+    };
+
     const renderRooms = (filter = '') => {
         const filteredRooms = rooms.filter(room => room.name.toLowerCase().includes(filter.toLowerCase()));
-        roomList.innerHTML = filteredRooms.map((r, i) => `
-            <div class="card bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col">
-                <div class="bg-blue-600 p-5 text-center">
-                    <i class="fas ${r.icon} text-white text-4xl"></i>
-                </div>
-                <div class="p-6 flex-grow flex flex-col">
-                    <h2 class="text-xl font-bold text-center mb-4 text-blue-800 border-b pb-3 uppercase">${r.name}</h2>
-                    <div class="space-y-3 text-gray-700 flex-grow mt-2">
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-500 font-medium">Meeting ID</span>
-                            <strong class="text-lg font-mono">${formatMeetingId(r.id)}</strong>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-500 font-medium">Passcode</span>
-                            <strong class="text-red-600 bg-red-50 px-2 py-1 rounded-md">${r.pass}</strong>
-                        </div>
-                        <div class="mt-5 p-3 bg-gray-50 rounded-xl border border-dashed border-gray-300">
+        roomList.innerHTML = filteredRooms.map((r, i) => {
+            const accent = getRoomAccent(r.name);
+            return `
+                <div class="card bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col">
+                    <div class="${accent.header} p-5 text-center">
+                        <i class="fas ${r.icon} text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h2 class="text-xl font-bold text-center mb-4 ${accent.title} border-b pb-3 uppercase">${r.name}</h2>
+                        <div class="space-y-3 text-gray-700 flex-grow mt-2">
                             <div class="flex justify-between items-center">
-                                <span class="text-xs font-bold uppercase text-gray-400">Host Key</span>
-                                <span id="host-${i}" onclick="showHost('${r.hostKey}', 'host-${i}')" class="host-blur px-4 py-1 rounded-md text-sm font-mono font-bold">******</span>
+                                <span class="text-gray-500 font-medium">Meeting ID</span>
+                                <strong class="text-lg font-mono">${formatMeetingId(r.id)}</strong>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-500 font-medium">Passcode</span>
+                                <strong class="text-red-600 bg-red-50 px-2 py-1 rounded-md">${r.pass}</strong>
+                            </div>
+                            <div class="mt-5 p-3 bg-gray-50 rounded-xl border border-dashed border-gray-300">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-xs font-bold uppercase text-gray-400">Host Key</span>
+                                    <span id="host-${i}" onclick="showHost('${r.hostKey}', 'host-${i}')" class="host-blur px-4 py-1 rounded-md text-sm font-mono font-bold">******</span>
+                                </div>
                             </div>
                         </div>
+                        <a href="${r.url}" target="_blank" class="mt-6 block w-full ${accent.button} text-white text-center py-3 rounded-xl font-bold shadow-lg transition-all duration-200 uppercase">
+                            GABUNG ZOOM
+                        </a>
                     </div>
-                    <a href="${r.url}" target="_blank" class="mt-6 block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-xl font-bold shadow-lg transition-all duration-200 uppercase">
-                        GABUNG ZOOM
-                    </a>
                 </div>
-            </div>
-        `).join('');
+            `;
+        }).join('');
     };
 
     const copyToClipboard = (text) => {
